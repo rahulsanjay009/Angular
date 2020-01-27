@@ -1,0 +1,32 @@
+<div class="header"> 
+  
+      <img src="./icon.png >
+   
+</div>
+<div class="row navigation">
+  <!-- Brand/logo -->
+  <div class="col-sm-6">
+  <a  href="#"><h6>Logo</h6></a></div>
+  
+  <!-- Links -->
+  <div class="col-sm-1" >
+      <a  routerLink="home" align=left><h6>Home</h6></a>
+    </div>
+    <div class="col-sm-1">
+      <a routerLink="aboutus" align=left><h6>aboutus</h6></a>
+    </div>
+    <div class="col-sm-1">
+      <a routerLink="contactus" align=left><h6>contactus</h6></a>
+    </div>
+    <div class="col-sm-1">
+      <a routerLink="startups" align=left><h6>startups</h6></a>
+    </div>
+    <div class="col-sm-1">
+      <a  routerLink="login" style="float:right"><h6>login</h6></a>
+    </div>
+    <div class="col-sm-1">
+      <a routerLink="register" style="float:left"><h6>register</h6></a>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

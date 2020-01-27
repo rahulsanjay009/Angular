@@ -1,0 +1,20 @@
+<div class="row" style="margin-top:80px">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <div class="jumbotron">
+            <table class="table text-center table-responsive">
+                <thead>
+                    <th>User Id</th>
+                    <th> Id </th>
+                    <th> Title </th>
+                </thead>
+                <tr *ngFor="let x of data1">
+                    <td>{{x.userId}}</td>
+                    <td>{{x.id}}</td>
+                    <td>{{x.title}}</td>
+                </tr>
+            </table>
+        </div>        
+    </div>
+  <div class="col-1"></div>
+</div>

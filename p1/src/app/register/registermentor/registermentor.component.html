@@ -1,0 +1,49 @@
+<form [formGroup]=registermentorForm (ngSubmit)="onSubmit(registermentorForm.value)" >   
+<div class="row">
+    <div class="col-6">
+    <div class="form-group">
+        <label for="f">FIRSTNAME</label>
+        <input type="text" class="form-control" id="f"  placeholder="enter firstname" formControlName="firstname">
+    </div>    
+    
+    <div class="form-group">
+        <label for="p" >PHONE NO</label>
+        <input type="text" class="form-control" id="p"  placeholder="enter phoneno" formControlName="phoneno">
+    </div>
+    <div class="form-group">
+        <label for="password"> PASSWORD</label>
+        <input type="password" class="form-control" id="password"placeholder="enter password" formControlName="password">
+    </div>
+    <div class="form-group">
+        <label for="cp"> CONFIRM PASSWORD</label>
+        <input type="password" class="form-control" id="cp"    placeholder="enter password" >
+    </div>
+    <div class="form-group">
+        <button class="btn btn-custom"  type="reset" style="float:right" (click)="resetForm(registermentorForm)" > reset </button>&nbsp; 
+        
+    </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label for="l">LASTNAME</label>
+            <input type="text" class="form-control" id="l"   placeholder="enter lastname" formControlName="lastname">
+        </div>    
+        <div class="form-group">
+            <label for="email" >EMAIL</label>
+         <input type="text" class="form-control" id="email" placeholder="enter email" formControlName="email">
+        </div>
+        <div class="form-group">
+            <label for="dp">DEPARTMENT</label>
+            <input type="text" class="form-control" id="dp"placeholder="enter Department" formControlName="dept">
+        </div>    
+        <div class="form-group">
+            <label for="c" >COLLEGE</label>
+            <input type="text" class="form-control" id="c" placeholder="enter college" formControlName="college">
+        </div>
+        <div class="form-group" >
+        <input class="btn btn-custom"  type="submit" value=register style="float:left">        
+        </div>
+    </div>
+<p> status : {{registermentorForm.value}} </p>
+</div>
+</form>

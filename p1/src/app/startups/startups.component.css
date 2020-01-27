@@ -1,0 +1,32 @@
+.col-sm-2{
+    margin-top:20px;
+    margin-left:30px;
+   
+}
+.col-sm-9{
+    margin-top:20px;
+    margin-left:30px;
+}
+.jumbotron{
+    color:black;
+    text-align:left;
+}
+
+.list-group{
+    height: 150px;
+    overflow: scroll;
+    font-size:15px;
+}
+.list-group-item{
+    height:30%;
+}
+.btn1{
+    margin-top:10px;
+    border: 1px solid black  ;
+    float: right;
+    border-radius: 0;
+}
+.btn1:hover{
+    background:linear-gradient(90deg,#8383b3,#5e5ec0);
+    color:white;
+}

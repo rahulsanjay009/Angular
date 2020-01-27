@@ -1,0 +1,40 @@
+to check current database
+-------------------------------
+>db;
+
+to create a collection
+------------------------
+db.createCollection("collection name");
+
+to check all collections
+-------------------------
+show collections
+
+inserting data (docs) into collection
+--------------------------------------
+insert(doc/docs);
+insertOne(doc);
+insertMany(docs);
+
+>db.collection-name.insert({});
+
+Query Operators/ relational operators
+-------------------------------------
+--> $gt
+	{field:{$gt:value} }
+
+--> $gte
+	{field:{$gte:value} }
+
+--> $lt
+	{field:{$lt:value} }
+
+--> $lte
+	{field:{$lte:value} }
+
+--> $eq
+	{field:{$eq:value} }
+	
+--> $ne
+	{field:{$ne:value}}
+

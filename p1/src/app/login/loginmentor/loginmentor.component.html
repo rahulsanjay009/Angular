@@ -1,0 +1,16 @@
+<form >
+    <div class="container">
+    <h4>login as mentor</h4> <br>
+    <div class="form-group">
+    <label for="un">ENTER MENTOR NAME</label>
+    <input type="text" class="form-control" id="un" placeholder="enter username" #username>
+        </div>
+    <div class="form-group">
+    <label for="pwd">ENTER PASSWORD</label>
+    <input type="password" class="form-control" id="pwd" placeholder="enter password" #password>
+    </div>
+    <div class="form-group text-center">
+        <button class="btn btn-custom"  type="submit" (click)="onsubmit(username.value,password.value)">LOGIN</button>
+    </div>
+    </div>
+    </form>

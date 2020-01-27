@@ -1,0 +1,20 @@
+
+<div class="row" style="margin-top:80px">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4 jumbotron">
+    <div class="row" height=10%>
+    <div class="col-sm-6" >
+        <a class="btn "  routerLink='loginmentee' id="mentee" (click)="abc()" style="float:right" routerLinkActive='is-active'> Login as mentee  </a>
+    </div> 
+    <div class="col-sm-6" >
+        <a class="btn " (click)="abc1()" id="mentor" routerLink='loginmentor' style="float:left"> Login as mentor  </a>
+    </div>  
+    </div>
+    <br>
+        <router-outlet></router-outlet>
+    
+    </div>
+
+    <div class="col-sm-4"></div>
+</div>
+

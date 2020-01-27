@@ -1,0 +1,67 @@
+<div class="row">
+    <div class="col-sm-2 jumbotron">
+        <h2 > Filter </h2>
+        <h6>By Department </h6>
+        <form>
+        <ul class="list-group">
+           <li class="list-group-item" *ngFor="let x of dept">
+                <input type="checkbox"  name="dept" value="{{x}}" (click)="checkedDepts($event)">
+                <label>{{x}}</label>
+           </li> 
+        </ul>
+        
+        <h6>By rating </h6>
+        <button type=button class="btn btn1"  (click)=applyFilter()> Apply </button><br><br>
+    </form>
+    </div>
+    <div class="col-sm-9 ">
+        <div class=row>
+            <div class="col-sm-4">
+                <div *ngFor="let x of selectedMentor.slice(2*this.selectedMentor.length/3,this.selectedMentor.length)" class="jumbotron">
+                    <div class="row">
+                        <div class="col-4">
+
+                        </div>
+                        <div class="col-8">
+                           name:  {{x.firstname+x.lastname}}<br>
+                           dept: {{x.dept}}
+                        </div>
+                    </div>
+                    startups: <br>
+                    <a routerLink="profile" class="btn btn1" (click)="sendProfile(x.firstname)"> view profile </a><br>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div *ngFor="let x of let x of selectedMentor.slice(this.selectedMentor.length/3,2*this.selectedMentor.length/3)" class="jumbotron">
+                    <div class="row">
+                        <div class="col-4">
+
+                        </div>
+                        <div class="col-8">
+                           name:  {{x.firstname+x.lastname}}<br>
+                           dept: {{ x.dept }}
+                            
+                        </div>
+                    </div>
+                    startups: <br>
+                    <a routerLink="profile" class="btn btn1" > view profile </a><br>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div *ngFor="let x of selectedMentor.slice(0,this.selectedMentor.length/3)" class="jumbotron">
+                    <div class="row">
+                        <div class="col-4">
+
+                        </div>
+                        <div class="col-8">
+                           name:  {{x.firstname+x.lastname}}<br>
+                           dept: {{ x.dept }}
+                        </div>
+                    </div>
+                    startups:  <br>
+                    <a routerLink="profile" class="btn btn1" > view profile </a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
